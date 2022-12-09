@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 11
+    Case Problem 1
+    
+    Online Bookworms Review Page
+    Author: Hesbon Osoro
+    Date: 12/10/22   
+    Filename: bw_review.html
+   -->
+
+    <title>Online Bookworms Public Forum</title>
+    <meta charset="utf-8" />
+    <link href="bw_base.css" rel="stylesheet" />
+    <link href="bw_layout.css" rel="stylesheet" />
+    <script src="bw_review.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="bw_logo.png" alt="Online Bookworms" />
+      <nav id="top">
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <input
+            type="text"
+            placeholder="Locate a Title"
+            name="gSearch"
+            id="gSearch"
+          />
+          <label for="gSearch"><img src="bw_search.png" alt="search" /></label>
+        </ul>
+      </nav>
+      <nav id="middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Book Swaps</a></li>
+          <li><a href="#">OBW Store</a></li>
+          <li><a href="#">Author's Corner</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <nav id="left">
+        <ul>
+          <li class="newgroup"><a href="#">Comments on this Title</a></li>
+          <li><a href="#">Reviews of this Title</a></li>
+          <li><a href="#">Order this Title from OBW</a></li>
+          <li><a href="#">Find a Book Swap</a></li>
+
+          <li class="newgroup"><a href="#">Other Books by this Author</a></li>
+          <li><a href="#">Other Books in this Series</a></li>
+          <li><a href="#">Recommended Books in this Genre</a></li>
+
+          <li class="newgroup"><a href="#">My Reading List</a></li>
+          <li><a href="#">Review a Book</a></li>
+          <li><a href="#">Join a Discussion</a></li>
+          <li><a href="#">Post to a Forum</a></li>
+          <li><a href="#">My Mail</a></li>
+          <li><a href="#">My Posts</a></li>
+          <li class="newgroup"><a href="#">Reading Recommendations</a></li>
+          <li><a href="#">Books of the Month</a></li>
+          <li class="newgroup"><a href="#">Tech Support</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Post Captain</h1>
+        <h2>by <a href="#">Patrick O'Brian</a></h2>
+        <h3>
+          W.W. Norton &amp; Company, Inc.<br />
+          500 Fifth Avenue, New York, N.Y. 10110<br />
+          ISBN: 0-393-30706-9<br />
+          &copy; Patrick O'Brian 1972
+        </h3>
+        <h3><b>Genre: </b><a href="#">Historical Fiction</a></h3>
+        <p>
+          The second novel in Patrick O'Brian's popular series of adventures
+          involving <a href="#">Captain Jack Aubrey</a> and
+          <a href="#">Doctor Stephen Maturin</a> finds the pair dealing with the
+          onset of war in 1803 after the breaking of the Peace of Amiens. Eager
+          to return to the fight, Aubrey escapes from France to return to
+          Britain, only to be faced with the prospect of years served in
+          debtors' prison at the hands of his creditors and their agents.
+          Meanwhile, Maturin must negotiate the more daunting rocks and shoals
+          of love and romance without endangering his friendship with Aubrey.
+        </p>
+        <fieldset id="commentField">
+          <label id="ratingLabel" for="rating"
+            >Rate this title
+            <span id="stars"
+              ><img src="bw_star.png" alt="1" /><img
+                src="bw_star.png"
+                alt="2" /><img src="bw_star.png" alt="3" /><img
+                src="bw_star.png"
+                alt="4" /><img src="bw_star.png" alt="5"
+            /></span>
+            <input type="text" name="rating" id="rating" readonly value="" />
+          </label>
+
+          <label id="commentLabel" for="comment">
+            Comment on this title (comments limited to 1000 characters)
+          </label>
+          <textarea id="comment" rows="" cols=""></textarea>
+
+          <label id="wordCountLabel" for="wordCount">
+            Character Count:
+            <input type="text" id="wordCount" readonly value="0/1000" />
+          </label>
+
+          <input type="submit" value=" Submit your Review" id="subButton" />
+        </fieldset>
+      </article>
+      <aside>
+        <h1>Reader Reviews</h1>
+        <div class="review">
+          <h1>Superb Sequel</h1>
+          <table>
+            <tr>
+              <th>By</th>
+              <td>AlisonJ (Seattle, WA)</td>
+            </tr>
+            <tr>
+              <th>Review Date</th>
+              <td>3/5/2018</td>
+            </tr>
+            <tr>
+              <th>Rating</th>
+              <td>
+                <img src="bw_star3.png" /><img src="bw_star3.png" /><img
+                  src="bw_star3.png"
+                /><img src="bw_star3.png" /><img src="bw_star3.png" />
+              </td>
+            </tr>
+          </table>
+          <p>
+            An excellent sequel to <cite>Master and Commander</cite>. You might
+            have difficulty following the nautical jargon, but it improves in
+            time as you are drawn into O'Brian's fully-realized world.
+          </p>
+        </div>
+        <div class="review">
+          <h1>The Movie is Better</h1>
+          <table>
+            <tr>
+              <th>By</th>
+              <td>DrewT (Des Moines, IA)</td>
+            </tr>
+            <tr>
+              <th>Review Date</th>
+              <td>3/5/2018</td>
+            </tr>
+            <tr>
+              <th>Rating</th>
+              <td><img src="bw_star3.png" /><img src="bw_star3.png" /></td>
+            </tr>
+          </table>
+          <p>
+            After loving the movie, I turned to the Aubrey/Maturin novels with
+            great anticipation. Unfortunately, I found the series long and
+            tiresome. Your mileage might differ.
+          </p>
+        </div>
+        <div class="review">
+          <h1>A Modern Classic</h1>
+          <table>
+            <tr>
+              <th>By</th>
+              <td>MaryK (Ancourage, AK)</td>
+            </tr>
+            <tr>
+              <th>Review Date</th>
+              <td>3/4/2018</td>
+            </tr>
+            <tr>
+              <th>Rating</th>
+              <td>
+                <img src="bw_star3.png" /><img src="bw_star3.png" /><img
+                  src="bw_star3.png"
+                /><img src="bw_star3.png" />
+              </td>
+            </tr>
+          </table>
+          <p>
+            These books are either loved or hated. They can be difficult but the
+            stories are rewarding to the reader who makes the effort.
+          </p>
+        </div>
+        <p><a href="#">Read More Reviews</a></p>
+      </aside>
+    </section>
+
+    <footer>
+      <p>Online Bookworms &copy; 2018 All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
